@@ -45,6 +45,7 @@ chrome の場合
 6. 参照をクリックして、本リポジトリの`conf/server.crt`を選択
 7. 次へをクリック
 8. 以下の表示を確認して次へをクリック
+
    <img src="image/image1.png" width="500px">
 9. 完了をクリック
 
