@@ -1,0 +1,7 @@
+services:
+  local-tls-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 443:443
