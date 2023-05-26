@@ -22,11 +22,12 @@ hosts ファイルを開き、以下の記述を付け足してください。
 [この記事](https://complesso.jp/12624)が参考になります。
 
 ```
-127.0.0.1 cypas.sec
-127.0.0.1 sms.cypas.sec
-127.0.0.1 cms.cypas.sec
-127.0.0.1 cms-storage.cypas.sec
-127.0.0.1 useragent.cypas.sec
+127.0.0.1 cypas.sec                     #http://localhost:8000
+127.0.0.1 sms.cypas.sec                 #http://localhost:8001
+127.0.0.1 cms.cypas.sec                 #http://localhost:8002
+127.0.0.1 cms-storage.cypas.sec         #http://localhost:8003
+127.0.0.1 useragent.cypas.sec           #https://internal-useragent.cypas.sec:8004
+127.0.0.1 internal-useragent.cypas.sec
 ```
 
 ### 自己証明書の警告を消す
@@ -57,13 +58,15 @@ chrome の場合
 
 初回にやることは以上です。
 
-## プロキシ起動
+## 2 回目以降
+
+### プロキシ起動
 
 ```
 docker compose up
 ```
 
-## プロキシ削除
+### プロキシ削除
 
 ```
 docker compose down
